@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.8.9 on darwin)" generated="20221028 22:11:22.176" rpa="false" schemaversion="2">
+<suite id="s1" name="Eno-Qa-Challange-1" source="/Users/snapp/Downloads/eno-qa-challange-1">
+<suite id="s1-s1" name="E2E" source="/Users/snapp/Downloads/eno-qa-challange-1/e2e">
+<suite id="s1-s1-s1" name="Api" source="/Users/snapp/Downloads/eno-qa-challange-1/e2e/api.robot">
+<test id="s1-s1-s1-t1" name="Challenge 1 without class">
+<kw name="Test Api Challenge" library="test_api">
+<doc>1.  Do a GET request to the /users endpoint
+2.  Validate the response code to be 200
+3.  Validate the response is an array of json objects
+4.  Write a file named "target_companies.txt" which contains the company names ends with " Group" from the response</doc>
+<status status="PASS" starttime="20221028 22:11:22.265" endtime="20221028 22:11:22.740"/>
+</kw>
+<tag>challenge_1</tag>
+<tag>eno_qa</tag>
+<status status="PASS" starttime="20221028 22:11:22.264" endtime="20221028 22:11:22.741"/>
+</test>
+<test id="s1-s1-s1-t2" name="Challenge 2 without class">
+<kw name="Get All Available Pets From Swagger" library="test_api">
+<var>${resp}</var>
+<msg timestamp="20221028 22:11:23.638" level="INFO">${resp} = [{'id': 4, 'category': {'id': 1, 'name': 'Dogs'}, 'name': 'Dog 1', 'photoUrls': ['url1', 'url2'], 'tags': [{'id': 1, 'name': 'tag1'}, {'id': 2, 'name': 'tag2'}], 'status': 'available'}, {'id': 7, 'cat...</msg>
+<status status="PASS" starttime="20221028 22:11:22.742" endtime="20221028 22:11:23.638"/>
+</kw>
+<kw name="Send Pet Name In Uppercase" library="test_api">
+<arg>${resp}</arg>
+<msg timestamp="20221028 22:11:43.245" level="INFO">{'args': {'name': 'DOG 1'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2254-2b3c1a5b6508982f03b6939f', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=DOG+1'}
+{'args': {'name': 'LION 1'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2255-1d3ccab049b6902e762bfcd8', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=LION+1'}
+{'args': {'name': 'LION 2'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2256-09bbc28d0c83c9570080e8d1', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=LION+2'}
+{'args': {'name': 'LION 3'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2257-249b15fd19fcb5892fbc9722', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=LION+3'}
+{'args': {'name': 'CATS'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2258-1041d61b566d952211f45a94', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=CATS'}
+{'args': {'name': 'XCWZESTULKHZ'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2258-6fefd9311f371c271450904a', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=XCWZESTULKHZ'}
+{'args': {'name': 'RAJA'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2259-599c39f1624633993d098c14', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=RAJA'}
+{'args': {'name': 'AVVPTKPMWEKLOLMLVMVMVH'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c225a-75fa14070071fb4032ee05ef', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=AVVPTKPMWEKLOLMLVMVMVH'}
+{'args': {'name': 'CAT'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c225b-710bf8f1506525cc54b65033', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=CAT'}
+{'args': {'name': '{{PETNAME}}'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c225c-32cd1a7825d8e84d0a020165', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=%7B%7BPETNAME%7D%7D'}
+{'args': {'name': 'AX'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c225c-49fc05672da6d4fc31ee1c92', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=AX'}
+{'args': {'name': 'BELLO'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c225d-50a7d03d2e74614a6f61f800', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=BELLO'}
+{'args': {'name': '{{PETNAME}}'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c225e-7bc88e3c74369f545fd6258e', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=%7B%7BPETNAME%7D%7D'}
+{'args': {'name': 'AX'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c225f-585f03530b31790520615f19', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=AX'}
+{'args': {'name': 'LEON'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2260-2647a1795ba34f97385c55eb', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=LEON'}
+{'args': {'name': 'LEO'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2261-01dd18501d214c21035589b3', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=LEO'}
+{'args': {'name': 'ELLA'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2261-5e3c1d675e2a11f8328acb04', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=ELLA'}
+{'args': {'name': 'MOUSE'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2262-37e140d50389b7ae3459f19f', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=MOUSE'}
+{'args': {'name': 'DOGGIE'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2263-238bd51876560f3e1a472e0e', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=DOGGIE'}
+{'args': {'name': 'DOGS'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2264-1436aeea2282a08903965da8', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=DOGS'}
+{'args': {'name': 'PET374UPDATED'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2264-5d294c235274031126d3298d', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=PET374UPDATED'}
+{'args': {'name': 'PET376'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2265-257fa35908be1fb2767ab7aa', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=PET376'}
+{'args': {'name': 'PET375UPDATED'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2266-0862eff432aa8d7c21331cee', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=PET375UPDATED'}
+{'args': {'name': 'PET377'}, 'data': {}, 'files': {}, 'form': {}, 'headers': {'x-forwarded-proto': 'https', 'x-forwarded-port': '443', 'host': 'postman-echo.com', 'x-amzn-trace-id': 'Root=1-635c2267-24913473662cb3de1355cbed', 'content-length': '0', 'user-agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*'}, 'json': None, 'url': 'https://postman-echo.com/post?name=PET377'}</msg>
+<status status="PASS" starttime="20221028 22:11:23.639" endtime="20221028 22:11:43.245"/>
+</kw>
+<tag>challenge_2</tag>
+<tag>eno_qa</tag>
+<status status="PASS" starttime="20221028 22:11:22.741" endtime="20221028 22:11:43.246"/>
+</test>
+<test id="s1-s1-s1-t3" name="Challenge 1_2 with class">
+<kw name="Get Response Url Api" library="TestApi">
+<var>${Response}</var>
+<arg>${challenge1_url}</arg>
+<msg timestamp="20221028 22:11:43.710" level="INFO">${Response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221028 22:11:43.247" endtime="20221028 22:11:43.710"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${Response.status_code}==200</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20221028 22:11:43.710" endtime="20221028 22:11:43.712"/>
+</kw>
+<kw name="Validate Json Data Is An Array" library="TestApi">
+<arg>${Response}</arg>
+<status status="PASS" starttime="20221028 22:11:43.712" endtime="20221028 22:11:43.712"/>
+</kw>
+<kw name="Find And Write Company Name From Response" library="TestApi">
+<arg>response=${Response}</arg>
+<status status="PASS" starttime="20221028 22:11:43.713" endtime="20221028 22:11:43.713"/>
+</kw>
+<tag>challenge_1_2</tag>
+<tag>eno_qa</tag>
+<status status="PASS" starttime="20221028 22:11:43.246" endtime="20221028 22:11:43.713"/>
+</test>
+<test id="s1-s1-s1-t4" name="Challenge 2_2 with class">
+<kw name="Get All Available Pets" library="TestApi">
+<var>${resp}</var>
+<msg timestamp="20221028 22:11:44.535" level="INFO">${resp} = [{'id': 4, 'category': {'id': 1, 'name': 'Dogs'}, 'name': 'Dog 1', 'photoUrls': ['url1', 'url2'], 'tags': [{'id': 1, 'name': 'tag1'}, {'id': 2, 'name': 'tag2'}], 'status': 'available'}, {'id': 7, 'cat...</msg>
+<status status="PASS" starttime="20221028 22:11:43.714" endtime="20221028 22:11:44.535"/>
+</kw>
+<kw name="Send Pet Name In Uppercase And Assert" library="TestApi">
+<arg>${resp}</arg>
+<status status="PASS" starttime="20221028 22:11:44.535" endtime="20221028 22:12:04.051"/>
+</kw>
+<tag>challenge_2_2</tag>
+<tag>eno_qa</tag>
+<status status="PASS" starttime="20221028 22:11:43.714" endtime="20221028 22:12:04.051"/>
+</test>
+<status status="PASS" starttime="20221028 22:11:22.201" endtime="20221028 22:12:04.052"/>
+</suite>
+<status status="PASS" starttime="20221028 22:11:22.199" endtime="20221028 22:12:04.055"/>
+</suite>
+<status status="PASS" starttime="20221028 22:11:22.178" endtime="20221028 22:12:04.057"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">challenge_1</stat>
+<stat pass="1" fail="0" skip="0">challenge_1_2</stat>
+<stat pass="1" fail="0" skip="0">challenge_2</stat>
+<stat pass="1" fail="0" skip="0">challenge_2_2</stat>
+<stat pass="4" fail="0" skip="0">eno_qa</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Eno-Qa-Challange-1">Eno-Qa-Challange-1</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="E2E">Eno-Qa-Challange-1.E2E</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1" name="Api">Eno-Qa-Challange-1.E2E.Api</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
